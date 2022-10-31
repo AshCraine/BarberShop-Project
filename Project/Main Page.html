@@ -1,0 +1,161 @@
+
+<html>
+
+  <head>
+      <meta charset = "utf-8">
+      <title>Main Page</title>
+  
+  <script>
+  
+  var counter = 1;
+      //document.getElementById('btn-next').addEventListener('click', nextImg, false);
+     // document.getElementById('btn-previous').addEventListener('click', preImg, false);
+  
+  function nextImg() {
+    if (counter <5 )
+    {
+      counter++;
+      var imagech = document.getElementById('picture');
+      imagech.setAttribute("src", "Barbershop" + counter + ".jpg");
+    }
+  }
+  function preImg() {
+    if(counter > 1){
+      counter--;
+      var imagech = document.getElementById('picture');
+      imagech.setAttribute("src", "Barbershop" + counter + ".jpg");
+    }
+    }
+    
+  
+ /* function imagechange() {
+              var Image_Id = document.getElementById('picture');
+              if (Image_Id.src.match("Barbershop1.jpg")) 
+              {
+                  Image_Id.src = "Barbershop2.jpg";
+              }
+              else {
+                  Image_Id.src = "Barbershop1.jpg";
+              }
+          } */  
+  
+  </script>
+  
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  body{margin:0;}
+  
+  h1 {
+    text-align: center;
+  }
+  
+  table {
+    width:50%;
+  }
+  th{
+    text-align: left;
+  }
+  td{
+    height: 50px;
+    vertical-align: middle;
+  }
+  .floated{
+  float: left;
+  }
+  
+  .clearfix{
+  overflow:auto;
+  clear:left;
+  }
+  p{
+    text-align: justify;
+  }
+  button{
+    float:left;
+    margin: 10px;
+  }
+  h2{
+    text-align: center;
+  }
+  
+  
+  </style>
+  
+  </head>
+  
+  <body>
+  
+     
+  <ul>
+    <li><a href="Main Page.html">Main page</a></li>
+    <li><a href="Team Page.html">Team</a></li>
+    <li><a href="Services Page.html">Service</a></li>
+  </ul>
+  
+  <h1>Just Cuts</h1>
+  <section>
+  <h2>About Just Cuts</h2>
+  <div class = "clearfix">
+  <img class = "floated" src = "Barbershop1.jpg" id="picture" alt="Barbershop" width="15%" height="15%">
+  Just Cuts is your local barbershop. We have been around for 20 years and have more than a collective 60 years of service amongst our barbers that we proudly use to serve the
+    people of Dallas. <br><br> We are staffed by 6 talented barbers in Dallas. We use traditional means to create a barbershop environment that will ease you in as you recieve the best 
+    cut experience. And if you want a shave or waxing to help complete the experience, we can off that. <br><br> We specialize in men's hair cuts, ball fades, shaving, various waxes, and
+    all sorts of old fashion methods. Yet we do not lose sight of modern methods while keeping the old aesthetic. Our barbershops are experienced and waiting!
+  </div>
+  <div>
+    <br>
+
+    <input type="button" onclick="preImg()" value="Previous">
+    <input type="button" onclick="nextImg()" value="Next">
+
+  </div>
+  </section>
+  <hr>
+  <h2>Contact Us</h2>
+  <table>
+    <tr>
+      <th>Contact Info</th>
+      <th>Reach Us</th>
+    </tr>
+    <tr>
+      <td>(123)456-7890</td>
+      <td>11111 Somewhere Rd., suite #001 Dallas, TX 75181</td>
+    </tr>
+    <tr>
+      <td><a href = "JustCut@JustGotACut.com">JustCut@JustGotACut.com</a></td>
+      <td>Tuesday- Friday<br>8:00AM-6:00PM<br>Saturday<br>10:00AM-2PM</td>
+    </tr>
+  </table>
+  <hr>
+  
+  
+  
+  
+  </body>
+  <footer>
+      <p>Made by Ashton Craine.</p>
+  </footer>
+  
+  </html>
